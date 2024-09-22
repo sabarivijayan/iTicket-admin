@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "target": "ES2015",  // Add this line to ensure compatibility with modern features
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,

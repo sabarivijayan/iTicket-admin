@@ -1,0 +1,129 @@
+.pageContainer {
+  display: flex;
+  height: 100vh;
+  background-color: #f8f9fa; /* Light background for better contrast */
+}
+
+.mainContent {
+  flex-grow: 1;
+  padding: 40px 20px; /* Increased padding for better spacing */
+  background-color: #ffffff; /* White background for content */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for a clean look */
+  border-radius: 8px; /* Soft corners */
+  margin: auto; /* Centering the form vertically */
+  max-width: 800px; /* Maximum width for larger screens */
+}
+
+.title {
+  font-size: 28px; /* Increased font size */
+  font-weight: bold;
+  margin-bottom: 30px; /* More spacing below title */
+  color: #333; /* Darker text color */
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Spacing between form groups */
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-weight: bold;
+  font-size: 18px; /* Slightly larger label */
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.select, .input {
+  padding: 12px; /* Increased padding for better input feel */
+  font-size: 16px;
+  width: 100%;
+  border: 1px solid #ccc; /* Subtle border */
+  border-radius: 4px; /* Rounded corners */
+  transition: border-color 0.3s ease; /* Smooth transition */
+}
+
+.select:focus, .input:focus {
+  border-color: #0070f3; /* Highlight input when focused */
+  outline: none;
+}
+
+.showtimeOptions, .checkboxOptions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px; /* Increased gap between options */
+}
+
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  color: #555; /* Medium grey for text */
+}
+
+.submitButton {
+  padding: 14px 24px;
+  background-color: #0070f3;
+  color: #fff;
+  border: none;
+  border-radius: 6px; /* Softer corners for buttons */
+  cursor: pointer;
+  font-size: 18px; /* Larger font for button text */
+  transition: background-color 0.3s ease, transform 0.1s ease; /* Smooth hover effect */
+}
+
+.submitButton:hover {
+  background-color: #005bb5;
+  transform: translateY(-2px); /* Subtle hover elevation effect */
+}
+
+.addButton, .removeButton {
+  padding: 10px 16px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.addButton:hover {
+  background-color: #218838;
+}
+
+.removeButton {
+  background-color: #dc3545;
+  margin-left: 10px;
+}
+
+.removeButton:hover {
+  background-color: #c82333;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .mainContent {
+    padding: 20px; /* Reduce padding on mobile */
+    margin: 0 10px; /* Adjust margins for smaller screens */
+  }
+
+  .title {
+    font-size: 24px; /* Adjust title size for smaller screens */
+  }
+
+  .submitButton {
+    font-size: 16px; /* Adjust button text size */
+  }
+
+  .addButton, .removeButton {
+    font-size: 12px; /* Adjust button text size */
+  }
+}
