@@ -1,0 +1,42 @@
+/* BookingCard.module.css */
+.card {
+    border: 1px solid #e5e7eb;
+    padding: 16px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .movieName {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .theatreName {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin-bottom: 4px;
+  }
+  
+  .details {
+    font-size: 0.875rem;
+    margin-bottom: 4px;
+  }
+  
+  .totalPrice {
+    font-weight: bold;
+  }
+  
+  .paymentStatus {
+    font-size: 0.875rem;
+  }
+  
+  .confirmed {
+    color: #10b981; /* green */
+  }
+  
+  .failed {
+    color: #ef4444; /* red */
+  }
+  
